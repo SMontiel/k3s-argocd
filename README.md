@@ -1,6 +1,6 @@
 # k3s-argocd
 
-´´´ bash
+```bash
 k3d cluster create <cluster-name>
 # or create it disabling Traefik
 k3d cluster create local --k3s-arg "--disable=traefik@server:0"
@@ -36,4 +36,4 @@ kubectl apply -f example-com.cert.yaml
 
 # echo-server
 helm upgrade -i echo-server ealenn/echo-server --namespace testing --create-namespace --force
-´´´
+```
